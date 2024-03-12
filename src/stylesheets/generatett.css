@@ -1,0 +1,16 @@
+.button-container {
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+.bodymain {
+  height: 100vh; /* Set the height to the full viewport height */
+  overflow-y: scroll;
+}
+.input{
+  width: 100px;
+}

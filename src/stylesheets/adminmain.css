@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=M+PLUS+2&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    font-family: 'Goldman', sans-serif !important;
+    
+}
+
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+}
+.button-container {
+    margin-top: 30px ;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.button {
+    background-color: #ADCBF8; /* Green */
+  border: none;
+  color: black;
+  font-family: 'Goldman', sans-serif !important;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-right: 10px;
+  
+}
+:root {
+    --primary: #d9d9d9;
+    --secondary: #ff5252;
+    --background: #eee;
+    --highlight: #ffda79;
+    /* Theme color */
+    --theme: var(--primary);
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /* Core styles/functionality */
+  .tab input {
+    /* position: absolute;
+    opacity: 0;
+    z-index: -1; */
+  }
+  .tab__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    padding-bottom: 10px;
+  }
+  .tab input:checked ~ .tab__content {
+   /* max-height: 50rem; */
+  }
+  
+  /* Visual styles */
+  .accordion {
+    color: var(--theme);
+    border: 2px solid;
+    border-radius: 0.5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto ;
+    margin-top: 30px ;
+  }
+  .tab__label,
+  .tab__close {
+    display: flex;
+    color: black;
+    background: var(--theme);
+    cursor: pointer;
+  }
+  .tab__label {
+    justify-content: space-between;
+    padding: 1rem;
+
+  }
+  .tab__label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+    
+  }
+  .tab input:checked + .tab__label::after {
+    /* transform: rotate(270deg); */
+  }
+  .tab__content  {
+    margin: 0;
+    padding-left : 10px;
+    padding-right: 10px;
+    color: black;
+  }
+  .tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .accordion--radio {
+    --theme: var(--secondary);
+  }
+  
+  /* Arrow animation */
+  .tab input:not(:checked) + .tab__label:hover::after {
+    /* animation: bounce .5s infinite; */
+  }
+  @keyframes bounce {
+    25% {
+      transform: rotate(90deg) translate(.25rem);
+    }
+    75% {
+      transform: rotate(90deg) translate(-.25rem);
+    }
+  }
+  table {
+    width: 100%; /* Use 100% to cover the entire width of the tab */
+    border-collapse: collapse;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+.confirmbutton{
+  background-color: #ADCBF8; /* Green */
+  border: none;
+  color: black;
+  font-family: Goldman;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.finalbutt{
+  background-color: #CFF1AD; /* Green */
+  border: none;
+  color: black;
+  font-family: Goldman;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.buttonHolder{
+  margin-top: 10px;
+  width: 100%;
+  padding-left: auto;
+  padding-right: auto;
+}
+.buttonHolder button{
+  width: 70%;
+}

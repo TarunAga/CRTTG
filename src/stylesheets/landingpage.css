@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=M+PLUS+2&display=swap');
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Goldman', sans-serif;
+  }
+
+  .full-screen-div {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.5s ease;
+  }
+
+  .full-screen-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('360VIEWOFLNMIIT.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    z-index: 0;
+  }
+  .overlay-div {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 20px; 
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .content-container {
+    margin-bottom: 50px;
+    filter: brightness(100%);
+    top: 10%;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+  .button {
+    margin: 15px 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Goldman;
+    color: white;
+    background-color: rgba(52, 152, 219, 0); /* Adjust color and transparency as needed */
+    border: 2px solid #00bcd4; /* Cyan border color */
+    border-radius: 8px; /* 8px border radius */
+    cursor: pointer;
+  }
+#maintext{
+    color: #FFF;
+font-family: Goldman;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* Your existing CSS styles remain unchanged */
+
+/* Your existing CSS styles remain unchanged */
+
+/* Your existing CSS styles remain unchanged */
+
+.hidden-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    text-align: center;
+    padding-top: 20%;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    border-radius: 8px;
+}
+
+
+@keyframes slideIn {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.hidden-overlay {
+  text-align: left; 
+  align-items: flex-start;
+  padding-top: 20px; 
+}
+
+.hidden-overlay p {
+ 
+  padding-top: 50px;
+
+  font-size: 30px;
+}
+.everythinghidden{
+padding: 20px;
+width: 60%;    
+}
+.hidden-overlay form {
+  margin-top: 20px;
+  text-align: left; /* Align text to the left within the form */
+}
+
+.hidden-overlay form label {
+  display: block; /* Display labels as block elements to stack them vertically */
+  margin-bottom: 5px; /* Add some space between labels and input fields */
+  padding-top: 15px;
+}
+
+.hidden-overlay form input {
+  width: 100%; /* Make the input fields take up the full width of their container */
+  padding: 8px; /* Add padding for better appearance */
+  margin-bottom: 10px; /* Add some space between input fields */
+}
+.hidden-overlay button {
+  width: 30%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  font-family: Goldman;
+  margin-right: auto;
+  display: block;
+  border-radius: 8px;
+  background-color: rgba(52, 152, 219, 0);
+}

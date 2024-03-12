@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=M+PLUS+2&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Goldman', sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    /* align-items: center; */
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.logout-button {
+    margin-left: auto !important;
+    align-items: right;
+}
+.profile-photo {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 8px;
+}
+.profile-info {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.profile-name {
+    margin: 10px 0;
+    font-size: 30px;
+    font-family: Goldman;
+}
+
+.profile-id {
+    font-size: 30px;
+
+}
+
+.grey-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Add this line */
+    text-align: center; /* Add this line */
+    background: linear-gradient(24deg, #8B8B8B 0%, rgba(196.90, 196.90, 196.90, 0) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.white-div {
+    flex: 1;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    text-align: center;
+    padding: 0 20px; 
+    /* Add padding for better visual appearance */
+}
+
+.action-text {
+    font-size: 25px;
+    font-family: Goldman;
+    background-color: rgba(52, 152, 219, 0); 
+    margin-bottom: 15px;
+    width: 60%;
+    text-align: center;
+    border: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .button-container a {
+    width: 48%;
+  }
+  
+  .button-container button {
+    width: 100%;
+  }
+  .lobutton-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button:hover {
+    background-color: rgb(208, 208, 208); /* Change button's background color on hover */
+  }
+  .currcour{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .coursebuttons{
+    font-family: 'Goldman', sans-serif;
+    border : none;
+  }

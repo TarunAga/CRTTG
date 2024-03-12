@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=M+PLUS+2&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Goldman', sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+}
+
+.custom-div {
+    border: 1px solid black;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row; /* Adjusted to a column layout */
+    justify-content: space-between;
+ 
+    border-radius: 8px;
+
+}
+
+/* Style for labels */
+.label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Add some space between labels */
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 2px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: grey;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+        /* Style the checkbox */
+        /* Style the checkbox */
+        .custom-checkbox {
+            width: 20px;
+            height: 20px;
+            appearance: none;
+            background-color: white;
+            border: 1px solid #333;
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .custom-checkbox:checked {
+            background-color: white;
+        }
+
+        .custom-checkbox:after {
+            content: "\2713";
+            font-size: 20px;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .custom-checkbox:checked:after {
+            display: block;
+        }
+        .custom-button {
+            background-color: #CFF1AD;
+            color: black;
+            font-family: Goldman;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       /* Radio button style */
+/* Radio button style */
+input[type="radio"] {
+    margin-right: 5px;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #000 !important; /* Border color */
+    background-color: #fff !important; /* Background color, adjust as needed */
+    cursor: pointer;
+}
+
+/* Optional: Add a custom style for the appearance of the radio button when checked */
+input[type="radio"]:checked {
+    background-color: #000 !important; /* Checked background color, adjust as needed */
+}

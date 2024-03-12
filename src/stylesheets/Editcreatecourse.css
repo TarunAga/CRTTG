@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=M+PLUS+2&display=swap');
+body {
+    display: flex;
+    /* align-items: center;  */
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Goldman,sans-serif;
+    padding: 40px;
+}
+
+
+#form-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px; /* Adjusted padding */
+}
+
+.weirdsettings {
+    margin-bottom: 15px;
+}
+
+label {
+    /* display: block; */
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+.wow{
+    text-align: left;
+    padding-left: 30px;
+}
+.lolw{
+    font-size: 40px;
+}
+.complete{
+    background-color: #CFF1AD;
+    color: black;
+    font-family: Goldman;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
